@@ -8,10 +8,10 @@ header{background:rgba(232,220,201,.92);-webkit-backdrop-filter:blur(10px);backd
 .lg{height:56px;width:auto;filter:drop-shadow(0 2px 3px rgba(90,60,20,.35))}nav{display:flex;gap:1.4rem;flex-wrap:wrap;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase}nav a{text-decoration:none;color:var(--ink)}nav a:hover{color:var(--gd)}
 section{padding:5.5rem 0}.ivory{background:linear-gradient(180deg,rgba(255,255,255,.4),rgba(255,255,255,.14))}
 .dark{background:radial-gradient(ellipse at 50% 0%,#4d3a24,transparent 70%),var(--esp);color:#EADFC8}
-h1,h2,h3{font-family:var(--s);font-weight:700;line-height:1.12;letter-spacing:.01em;margin:0 0 1.2rem;overflow-wrap:break-word;color:#9C763A;text-shadow:0 1px 0 rgba(255,255,255,.75),0 -1px 0 rgba(90,60,20,.3),0 7px 14px rgba(110,80,30,.28)}
-h1{font-size:clamp(2.4rem,5.4vw,4.3rem)}h1 em{font-style:normal;color:#7A5A27}h2{font-size:clamp(1.9rem,3.6vw,2.7rem)}h3{font-size:1.4rem;text-shadow:0 1px 0 rgba(255,255,255,.7),0 4px 8px rgba(110,80,30,.2)}
+h1,h2,h3{font-family:var(--s);font-weight:700;line-height:1.12;letter-spacing:.01em;margin:0 0 1.2rem;overflow-wrap:break-word;color:#9C763A;text-shadow:-1px -1px 0 rgba(255,255,255,.85),1px 1px 0 #8F6B30,2px 2px 0 #84642C,3px 5px 8px rgba(70,45,15,.38),6px 12px 20px rgba(70,45,15,.2)}
+h1{font-size:clamp(2.4rem,5.4vw,4.3rem)}h1 em{font-style:normal;color:#7A5A27}h2{font-size:clamp(1.9rem,3.6vw,2.7rem)}h3{font-size:1.4rem;text-shadow:-1px -1px 0 rgba(255,255,255,.8),1px 1px 0 #8F6B30,2px 4px 6px rgba(70,45,15,.3)}
 h2::after{content:"";display:block;width:90px;height:2px;margin-top:1.1rem;background:linear-gradient(90deg,var(--gold),transparent);box-shadow:0 1px 2px rgba(110,80,30,.3)}
-.dark h2,.dark h3{color:var(--gl);text-shadow:0 1px 0 rgba(255,255,255,.2),0 5px 12px rgba(0,0,0,.55)}.dark a{color:#EADFC8}
+.dark h2,.dark h3{color:var(--gl);text-shadow:-1px -1px 0 rgba(255,255,255,.25),1px 1px 0 #7A5A26,2px 2px 0 #5D431A,3px 6px 10px rgba(0,0,0,.6)}.dark a{color:#EADFC8}
 .ey{color:var(--gd);letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;font-weight:500}
 .hero{padding:5rem 0}.hero.s{padding:4.5rem 0}
 .vl{max-width:380px;margin:auto;border-radius:4px;box-shadow:0 30px 60px rgba(90,65,30,.38),0 0 0 1px rgba(181,138,69,.5);animation:fl 9s ease-in-out infinite}
@@ -39,10 +39,14 @@ footer{background:var(--esp);color:#EADFC8;padding:2.5rem 0;font-size:.8rem;text
 .pt2{width:100%;border-radius:4px;box-shadow:0 20px 40px rgba(90,65,30,.3),0 0 0 1px rgba(181,138,69,.5)}
 .ph.wide img{aspect-ratio:auto}.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}.ba.land .ph img{aspect-ratio:3/2}
 @media(max-width:860px){.coll{min-height:470px}.brand{font-size:1.2rem}.em{width:46px;height:46px}.row3{grid-template-columns:1fr 1fr 1fr;gap:.5rem}}
-.wm2{height:30px;width:auto;mix-blend-mode:multiply}.brand{text-decoration:none}
+.wm2{height:30px;width:auto}.brand{text-decoration:none}
 .hero.home{position:relative;overflow:hidden;min-height:min(88vh,740px);display:flex;align-items:center;padding:4rem 0}
 .bgp{position:absolute;right:0;top:0;bottom:0;width:54%}.bgp img{width:100%;height:100%;object-fit:cover;object-position:center 30%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 40%);mask-image:linear-gradient(90deg,transparent 0,#000 40%)}
 .wm{position:absolute;left:-6%;top:50%;transform:translateY(-50%);width:min(620px,62%);opacity:.34;mix-blend-mode:multiply;pointer-events:none}
 .hero.home .w{position:relative;z-index:2;width:100%}.txt{max-width:560px}.row3.one{grid-template-columns:minmax(0,300px)}.case .wide{max-width:760px}
 @media(max-width:860px){.hero.home{min-height:0;padding:3rem 0}.bgp{width:100%;opacity:.3}.bgp img{-webkit-mask-image:none;mask-image:none}.wm{width:90%;left:5%;opacity:.25}}
+section{position:relative}.hero.home{background:linear-gradient(90deg,#FFFDF8 0,#FFFDF8 50%,#F0E7D6 100%)}
+.fl{position:absolute;right:6%;top:1.6rem;width:120px;border-radius:4px;box-shadow:0 18px 36px rgba(90,65,30,.35),0 0 0 1px rgba(181,138,69,.5);animation:fl 9s ease-in-out infinite;pointer-events:none}
+.sig{font-family:"Allura","Snell Roundhand",cursive!important;font-weight:400!important;font-size:clamp(3rem,6vw,4.6rem)!important;letter-spacing:0!important;line-height:1.05}
+@media(max-width:860px){.fl{width:76px;right:4%;top:1rem}}
 .art{max-width:720px;margin:0 auto;padding:0 1.25rem}.art p{margin:0 0 1.3rem;font-size:1.1rem}.art h1{font-size:clamp(1.7rem,4vw,2.6rem)}.art-list a.tile{display:block;padding:1.5rem;margin:0 0 1.25rem}.art-list p{margin:.4rem 0 .8rem}
