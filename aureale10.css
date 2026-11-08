@@ -272,3 +272,8 @@ h1{overflow-wrap:anywhere;hyphens:auto}.art table{display:block;max-width:100%;o
 @media(max-width:1099px){.veil.strong::before{opacity:.28;width:100%;-webkit-mask-image:none;mask-image:none}}
 
 .strum .pig{display:block;border-top:1px solid rgba(184,146,79,.25);padding-top:1.6rem;max-width:46rem}
+
+blockquote.gr .grv{display:flex;align-items:center;gap:.55rem;margin:0 0 .8rem;padding-bottom:.7rem;border-bottom:1px solid rgba(184,146,79,.25)}
+blockquote.gr .grv b{font:500 .95rem Montserrat,sans-serif;color:#F2EEE6;letter-spacing:.01em}
+blockquote.gr .gs{display:inline-flex;gap:2px;margin-left:.2rem}
+blockquote.gr .gg{flex:none}
