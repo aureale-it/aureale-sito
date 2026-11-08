@@ -238,7 +238,7 @@ a.xl{text-decoration:underline;text-decoration-thickness:1px;text-underline-offs
 /* ritmo uniforme articoli */
 .art{padding-bottom:1rem}.art p{font-size:1.05rem;line-height:1.75;margin:0 0 1.35rem}.art h2{margin:3rem 0 1.2rem}.art>h2:first-of-type,.art>p.mu+p+h2{margin-top:2.6rem}.art h3{font-size:1.12rem;margin:2rem 0 .9rem}.art ul,.art ol{margin:0 0 1.5rem;padding-left:1.3rem}.art li{font-size:1.05rem;line-height:1.7;margin:0 0 .6rem}.art .ba,.art .row{margin:1.6rem 0 2rem}.art .ba .row{margin:0}.art .refs{font-size:.88rem;line-height:1.6}.art .refs li{font-size:.88rem;margin:0 0 .4rem}.art .btn{margin:.6rem 0 2rem}.art sup{font-size:.7em;line-height:0}.art small,.art .nota{font-size:.78rem;color:var(--mu)}
 .hero.s:has(+section .art) .w.nar{max-width:720px}
-h1{overflow-wrap:anywhere;hyphens:auto}.art table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+h1{overflow-wrap:break-word;hyphens:none;-webkit-hyphens:none}.art table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
 @media(min-width:701px) and (max-width:860px){.two{grid-template-columns:1fr 1fr;gap:2rem;align-items:center}}
 @media(max-width:700px){.two>img,.two>a>img,.two>figure img{max-width:min(100%,420px);margin-left:auto;margin-right:auto}.two>a{display:block}}
 @media(min-width:701px) and (max-width:860px){#chi-sono .two{grid-template-columns:1.2fr 1fr;align-items:start;gap:2rem}#chi-sono .pt2{max-width:none;width:100%}}
@@ -277,3 +277,4 @@ blockquote.gr .grv{display:flex;align-items:center;gap:.55rem;margin:0 0 .8rem;p
 blockquote.gr .grv b{font:500 .95rem Montserrat,sans-serif;color:#F2EEE6;letter-spacing:.01em}
 blockquote.gr .gs{display:inline-flex;gap:2px;margin-left:.2rem}
 blockquote.gr .gg{flex:none}
+.sez{margin:2rem auto;max-width:900px}.sez img{width:100%;height:auto;border-radius:3px;display:block}.sez figcaption{color:var(--mu);font-size:.78rem;letter-spacing:.03em;padding:.55rem 0 0}.sez.tall{max-width:640px}
