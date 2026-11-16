@@ -4,6 +4,9 @@
 (function () {
   "use strict";
   var TEL = "393922504898";
+  /* Contatore Umami (senza cookie): inserire qui il Website ID per attivarlo */
+  var UMAMI = "eafb1720-7aa8-46a4-bda9-3f8d5d75c546";
+  if (UMAMI) { try { var us = document.createElement("script"); us.defer = true; us.src = "https://cloud.umami.is/script.js"; us.setAttribute("data-website-id", UMAMI); document.head.appendChild(us); } catch (e) {} }
   function wa(msg) { return "https://wa.me/" + TEL + "?text=" + encodeURIComponent(msg); }
 
   var CONS = "La consulenza è gratuita e si svolge di persona a Roma, zona Flaminio, su appuntamento: osservo la cute, ascolto cosa desideri e ti dico con realismo cosa è possibile ottenere. Per una prima idea puoi anche inviarmi delle foto su WhatsApp (di fronte, di retro e laterali, in HD): ti rispondo personalmente.";
@@ -133,7 +136,7 @@
     function direct() {
       if (busy) return; clearChips(); bubble("wac-u", "Voglio parlare direttamente con te"); cta.href = wa(GENERIC);
       reply(WELCOME, function () {
-        var a = el("a", { "class": "wac-cta wac-cta-i", href: wa(GENERIC), target: "_blank", rel: "noopener" }, WAIC + "<span>Apri WhatsApp</span>");
+        var a = el("a", { "class": "wac-cta wac-cta-i", href: wa(GENERIC), "data-umami-event": "clic-whatsapp-chat", target: "_blank", rel: "noopener" }, WAIC + "<span>Apri WhatsApp</span>");
         msgs.appendChild(a); scroll();
       });
     }
